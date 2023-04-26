@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+
+<body>
+
+<!-- Responda a três perguntas e confira como está sua taxa de gordura corporal, ultilizando o IMC. -->
+
+    <Script>
+        let nome = prompt("Qual o seu nome?");
+        let peso = prompt("Qual o seu peso?")
+        let altura = prompt("Qual a sua altura?")
+
+        // Alerta para inserir informações. 
+
+        let imc = (peso) / (altura * altura);
+
+        //Calculo ultilizado 
+
+        if (imc <= 18.49) {
+            alert(nome + " " + "você está abaixo do peso. Seu IMC é de" + " " + imc.toFixed(2));
+        }
+
+        else if (imc >= 18.5 && imc < 24.9) {
+            alert(nome + " " + "seu peso está normal.Seu IMC é de" + " " + imc.toFixed(2));
+        }
+
+        else if (imc >= 25.00 && imc < 30) {
+            alert(nome + " " + "você está acima do peso. Seu IMC é de" + " " + imc.toFixed(2));
+        }
+
+        // if e else if usados para separa cada informação temos três opções abaixo do peso, dentro do peso 
+        //e acima do peso. oto.Fixedé usado para arredondamento do numero (2) foi escolhido duas casas decimais 
+        //após o . mas pode ser usado a quantidade que for nescessaria.
+
+    </Script>
+
+
+
+
+</body>
+
+</html>
